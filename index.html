@@ -3,34 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DialogBoxApp</title>
+    <title>DialogBox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" 
     href="https://fonts.gstatic.com" crossorigin>
     <link 
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" 
     rel="stylesheet">
-    <link rel="stylesheet" href="Styles/main.css"></head>
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="icon" type="image/png" href="/Images/LogoPrime.png" /></head>
 </head>
 <body>
     <div class="app">
         <div class="panel">
             <img class="logo" src="/Images/Logo.svg" alt="logo Habit App"/>
+            <img class="logoName" src="/Images/logoName.svg" alt="logoName">
             <nav class="menu">
                 <div class="menu__list">
+                    <button id="acc" class="menu__item">
+                    <img src="/Images/user.svg" alt="acc">
+                    </button>
                     <button class="menu__item">
                     <img src="/Images/water.svg" alt="water">
                     </button>
                     <button class="menu__item">
                         <img src="/Images/study.svg" alt="study">
                         </button>
-                </div>s
+                </div>
                 <button class="menu__add">
                     <img src="/Images/add.svg" alt="add">
                 </button>
             </nav>
         </div>
-        <div class="content">dada</div>
+        <div class="content">
+            <header>
+                <h1>Pushups</h1>
+                <div class="progress">
+                    <div class="progress__text">
+                        <div class="progress__name">Progress</div>
+                        <div class="progress__percent">80%</div>
+                    </div>
+                    <div class="progress__bar">
+                        <dir class="progress__cover_bar">
+
+                        </dir>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="habit">
+                        <div class="habit__day">Day 1</div>
+                        <div class="habit__comment">Hard to start as i think</div>
+                        <button class="habit__delete">
+                            <img src="/Images/trash.svg" alt="delete day 1">
+                        </button>  
+                    </div>
+                </div>
+                <div class="habit">
+                    <div class="habit__day">Day 2</div>
+                    <form class="habit__form">
+                        <input class="input_icon" type="text" placeholder="Add comment">
+                         <img class="input__icon" src="/Images/comment.svg" alt="comment">
+                        <button class="button">Add</button> 
+                    </form>
+                </div>
+            </main>
+        </div>
     </div>
     <script src="./Scripts/app.js"></script>
 </body>

@@ -26,15 +26,21 @@ body{
 }
 
 .logo {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     height: 130px;
     width: 130px;
+}
+
+.logoName{
+    max-width: 130px;
+    margin-bottom: 50px;
 }
 
 .panel{
     background-color: rgba(249, 249, 249, 1);
     min-height: 100vh;
     padding: 30px;
+    max-width: 185px;
 }
 
 .menu{
@@ -57,9 +63,14 @@ body{
     border-radius: 70px;
     border-width: 5px;
     border-color: rgba(231, 68, 37, 1);
+    border-style: solid;
     height: 90px;
     width: 90px;
     cursor: pointer;
+}
+
+#acc{
+    margin-bottom: 25px;
 }
 
 .menu__item:hover{
@@ -75,6 +86,7 @@ body{
     border-radius: 100px;
     border-width: 5px;
     border-color: rgba(231, 68, 37, 1);
+    border-style: solid;
     height: 90px;
     width: 90px;
     cursor: pointer;
@@ -85,4 +97,153 @@ body{
 }
 .menu__add:hover img{
     filter: brightness(0) invert(1);
+}
+
+.content{
+    padding: 45px;
+    min-width: 900px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    line-height: 30px;
+    color: black;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 250px;
+    margin-top: 10px;
+}
+
+.progress__text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__name{
+    font-size: 30;
+    line-height: 15px;
+}
+
+.progress__percent{
+    font-size: 30;
+    line-height: 15px;
+}
+
+.progress__bar{
+    width: 100%;
+    background: rgba(249, 249, 249, 1);
+    border-radius: 13px;
+    height: 10px;
+    position: relative;
+}
+
+.progress__cover_bar{
+    position: absolute;
+    width: 80%;
+    border-radius: 13px;
+    height: 10px;
+    background: rgba(231, 68, 37, 1);
+    margin-top: 0;
+}
+
+main{
+    margin-top: 15px;
+}
+
+.habit{
+    background: rgba(249, 249, 249, 1);
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.habit__day{
+    border-radius: 10px 0 0 10px;
+    border-right: 3px solid rgba(242, 242, 242, 1);
+    font-size: 30px;
+    padding: 20px 40px;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.habit__comment{
+    font-size: 25px;
+    padding: 20px 25px;
+}
+
+.habit__delete{
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.habit__delete:hover{
+    background: rgba(33, 64, 154, 1);
+}
+
+input{
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 13px;
+    padding: 20px 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    flex: 1;
+}
+
+input::placeholder{
+    color: rgba(7, 25, 107, 1);
+    opacity: 50%;
+}
+
+.habit__form{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    font-size: 40px;
+    padding: 0px 10px 0px 25px;
+    position: relative;
+}
+
+.input_icon{
+    padding-left: 75px;
+    font-size: 18px;
+}
+
+.input__icon{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    opacity: 50%;
+}
+
+.button{
+    background: rgba(231, 68, 37, 1);
+    border: none;
+    border-radius: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 1);
+    cursor: pointer;
+    padding: 15px 60px ;
+}
+
+button:hover{
+    background: rgb(194, 59, 33);
 }
