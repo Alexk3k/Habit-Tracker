@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "icon": "sport",
+        "name": "pushups",
+        "target": 10,
+        "days": [
+            {"comment":"Hard to start as i think"},
+            {"comment":"Second lilbit easier"}
+        ]
+    },
+
+    {
+        "id": 1,
+        "icon": "food",
+        "name": "heathy food",
+        "target": 10,
+        "days": [
+            {"comment":"cool"}
+        ]
+    }
+
+]
